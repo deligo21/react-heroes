@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 
 import { ErrorPage } from "../ErrorPage";
 import { LoginPage } from "../auth";
@@ -21,4 +21,5 @@ export const routesConfig = [
     }
 ] 
 
-export const AppRouter = () => createBrowserRouter(routesConfig);
+// export const AppRouter = () => createBrowserRouter(routesConfig);
+export const AppRouter = () => createHashRouter(routesConfig);
